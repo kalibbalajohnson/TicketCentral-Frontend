@@ -298,29 +298,6 @@ function AmbientBackground({ variant }: AmbientBackgroundProps) {
       {/* faint mesh grid */}
       <div className={`tc-grid absolute inset-0 ${isHero ? "opacity-[0.07]" : "opacity-[0.035]"}`} />
 
-      {/* stage-light spotlight beams — the "something big is happening" cue */}
-      {isHero && (
-        <>
-          <div
-            className="tc-spotlight absolute -top-10 left-[18%] h-[70%] w-[220px] opacity-[0.14]"
-            style={{
-              background: "linear-gradient(180deg, rgba(251,191,36,0.9), transparent 75%)",
-              clipPath: "polygon(48% 0%, 52% 0%, 100% 100%, 0% 100%)",
-              transformOrigin: "top center",
-              animationDelay: "0s",
-            }}
-          />
-          <div
-            className="tc-spotlight absolute -top-10 right-[16%] h-[70%] w-[220px] opacity-[0.12]"
-            style={{
-              background: "linear-gradient(180deg, rgba(236,72,153,0.9), transparent 75%)",
-              clipPath: "polygon(48% 0%, 52% 0%, 100% 100%, 0% 100%)",
-              transformOrigin: "top center",
-              animationDelay: "-4s",
-            }}
-          />
-        </>
-      )}
 
       {/* bokeh light orbs */}
       <div
