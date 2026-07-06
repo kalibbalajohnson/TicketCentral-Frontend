@@ -339,7 +339,7 @@ function AmbientBackground({ variant }: AmbientBackgroundProps) {
       )}
 
       {/* confetti — the clearest "this is a party" signal, kept small and sparse */}
-      {confetti.map((c, i) => (
+      {/* {confetti.map((c, i) => (
         <span
           key={i}
           className={`tc-confetti absolute rounded-[2px] ${c.color}`}
@@ -354,7 +354,7 @@ function AmbientBackground({ variant }: AmbientBackgroundProps) {
             animationDelay: `${c.delay}s`,
           }}
         />
-      ))}
+      ))} */}
 
       {/* twinkling sparkles — hero only */}
       {isHero &&
