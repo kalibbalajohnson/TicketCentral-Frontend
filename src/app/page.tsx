@@ -338,24 +338,6 @@ function AmbientBackground({ variant }: AmbientBackgroundProps) {
         />
       )}
 
-      {/* confetti — the clearest "this is a party" signal, kept small and sparse */}
-      {/* {confetti.map((c, i) => (
-        <span
-          key={i}
-          className={`tc-confetti absolute rounded-[2px] ${c.color}`}
-          style={{
-            top: `${c.top}%`,
-            left: `${c.left}%`,
-            width: c.size,
-            height: c.size * 2.2,
-            opacity: isHero ? 0.5 : 0.28,
-            transform: `rotate(${c.rot}deg)`,
-            animationDuration: `${c.dur}s`,
-            animationDelay: `${c.delay}s`,
-          }}
-        />
-      ))} */}
-
       {/* twinkling sparkles — hero only */}
       {isHero &&
         SPARKLES.map((s, i) => (
