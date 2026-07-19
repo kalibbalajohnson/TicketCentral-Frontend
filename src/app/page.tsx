@@ -457,7 +457,8 @@ function Hero({ query, setQuery }: HeroProps) {
 
       <div className="relative z-10 mx-auto max-w-7xl px-5 pb-16 pt-8 sm:px-8 sm:pt-10">
         <div className="max-w-2xl">
-          <span className="inline-flex items-center gap-2 rounded-full border border-orange-200 bg-orange-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-orange-700">
+          {/* <span className="inline-flex items-center gap-2 rounded-full border border-orange-200 bg-orange-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-orange-700"> */}
+          <span className="inline-flex items-center gap-2 rounded-full bg-orange-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-orange-700">
             <Ticket className="h-3.5 w-3.5" />
             Uganda's #1 Ticketing Platform
           </span>
@@ -575,8 +576,8 @@ function FilterPanel({ category, setCategory, toggles, setToggles, price, setPri
               key={c}
               onClick={() => setCategory(c)}
               className={`shrink-0 rounded-full px-4 py-2 text-sm font-medium transition-colors ${category === c
-                  ? "bg-orange-600 text-white"
-                  : "bg-orange-50 text-slate-600 hover:bg-orange-100 hover:text-orange-700"
+                ? "bg-orange-600 text-white"
+                : "bg-orange-50 text-slate-600 hover:bg-orange-100 hover:text-orange-700"
                 }`}
             >
               {c}
